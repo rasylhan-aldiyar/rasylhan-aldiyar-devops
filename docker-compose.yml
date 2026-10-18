@@ -1,0 +1,18 @@
+# Start:  docker compose up -d   (or without -d to see logs)
+# Check:  docker compose ps  /  curl http://localhost:8000
+# Stop:   docker compose down
+services:
+  app:
+    build: .
+    image: rasylhan-aldiyar-devops
+    container_name: rasylhan-aldiyar-compose
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Aldiyar}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Rasylhan}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2309}
+      STUDENT_ID: ${STUDENT_ID:-37838}
+      APP_MODE: server
+      APP_PORT: "8080"
+    ports:
+      - "8000:8080"
+    restart: unless-stopped

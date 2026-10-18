@@ -1,0 +1,7 @@
+.git
+.env
+logs/
+backup/
+jenkins/
+private.txt
+**/__pycache__
