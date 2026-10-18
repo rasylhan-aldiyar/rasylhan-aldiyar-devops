@@ -1,0 +1,12 @@
+# Log files are generated at runtime and can be large
+*.log
+
+# Local backups are not source code
+backup/
+
+# Secrets and local environment settings must never be committed
+.env
+
+# Python cache
+__pycache__/
+*.pyc
