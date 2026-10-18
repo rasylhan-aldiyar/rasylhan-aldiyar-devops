@@ -1,0 +1,2 @@
+PUBLIC: project rasylhan-aldiyar-devops, group IT2-2309.
+Owner may read and write, group and others may only read (chmod 644).

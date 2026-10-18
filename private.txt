@@ -1,0 +1,2 @@
+PRIVATE: personal notes of Rasylhan Aldiyar (Student ID 37838).
+Only the owner may read and write this file (chmod 600).

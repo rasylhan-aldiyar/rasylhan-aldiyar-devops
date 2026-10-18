@@ -1,0 +1,5 @@
+Name: Aldiyar
+Surname: Rasylhan
+Group: IT2-2309
+Student ID: 37838
+Course: DevOps
