@@ -1,0 +1,21 @@
+# Local Jenkins for the lab.
+# Start:  cd jenkins && docker compose up -d --build
+# Open:   http://localhost:8080
+# First admin password:
+#   docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+services:
+  jenkins:
+    build: .
+    container_name: jenkins
+    # root is used only to access the host Docker socket in this lab setup
+    user: root
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:
